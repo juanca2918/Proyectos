@@ -109,7 +109,7 @@ footer .Contacto, footer .Terminos, footer .Redes, footer .Derechos{
 }
 @font-face {
   font-family: Dancing Script;
-  src: url(/Tarea/Dancing_Script/DancingScript-Bold.ttf);
+  src: url(../Dancing_Script/DancingScript-Bold.ttf);
 }
 body{font-family:Dancing Script;background-color: #02010a;}
 
