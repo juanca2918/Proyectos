@@ -7,3 +7,4 @@
 div[class*="imagenes"]{margin: 5px;}
 label{color: black;}
 .formulario{padding: 5px;}
+.fondo{background: url(../img/fondo.jpg);}
