@@ -1,0 +1,12 @@
+img.img-adaptada{
+  width: 500px;
+  height: 500px;
+}
+
+div.titulo > h1{
+  text-align: center;
+}
+
+body{margin-top: 5px;font-family: 'Teko', sans-serif;background-color: black;}
+div.contenedor-personal{margin:10px;justify-content: center;}
+div.fila-pie{margin-top: 10px;}
