@@ -1,0 +1,14 @@
+.parallax-container{
+  height: 500px;
+}
+.logo{
+  justify-content: center;
+
+}
+body{
+  font-family: 'Roboto Slab', serif;
+}
+
+.Encabezado{
+  padding-top: 1px;
+}
