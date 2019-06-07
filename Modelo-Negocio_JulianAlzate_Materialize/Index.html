@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
@@ -10,25 +11,34 @@
   </head>
   <body>
     <!--Inicio Contenedor Principal-->
-
     <nav>
       <div class="nav-wrapper red darken-4">
-        <span class="brand-logo logo">BIENVENIDO</span>
+        <span class="brand-logo center">BIENVENIDO</span>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li class="active"><a href="Index.html">Inicio</a></li>
+          <li><a href="Index.html">Inicio</a></li>
           <li><a href="#Nosotros">Nosotros</a></li>
+          <li><a href="#Contactanos">Contactanos</a></li>
           <li><a href="#Redes_Sociales">Redes Sociales</a></li>
         </ul>
       </div>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="Index.html">Inicio</a></li>
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li><a href="#Contactanos">Contactanos</a></li>
+        <li><a href="#Redes_Sociales">Redes Sociales</a></li>
+      </ul>
     </nav>
-
     <div class="parallax-container">
       <div class="parallax"><img src="img/negocio modelo 3.jpeg"></div>
     </div>
+    <div class="container">
+
+
     <div class="section white">
-      <div class="row container Encabezado">
-        <h2 class="header">DigiGrafic</h2>
-        <div class="col s4">
+      <div class="row container hoverable">
+        <h2 class="header center-align" id="Nosotros">DigiGRAFIC</h2>
+        <div class="col s12 m4 l4">
           <div class="card white darken-1">
           <div class="card-content">
             <span class="card-title">Mision</span>
@@ -37,7 +47,7 @@
           </div>
         </div>
         </div>
-        <div class="col s4">
+        <div class="col s12 m4 l4">
           <div class="card white darken-1">
           <div class="card-content">
             <span class="card-title">Vision</span>
@@ -46,7 +56,7 @@
           </div>
         </div>
         </div>
-        <div class="col s4">
+        <div class="col s12 m4 l4">
           <div class="card white darken-1">
           <div class="card-content">
             <span class="card-title">ETC.</span>
@@ -57,12 +67,13 @@
         </div>
       </div>
     </div>
+    </div>
     <div class="section white">
-      <div class="row container nosotros">
-        <div class="col s12">
+      <div class="row container hoverable">
+        <div class="col s12 m12 l12">
           <div class="card white darken-1">
           <div class="card-content">
-            <span class="card-title" id="Nosotros">Nosotros</span>
+            <span class="card-title">Nosotros</span>
             <p>I am a very simple card. I am good at containing small bits of information.
             I am convenient because I require little markup to use effectively.</p>
           </div>
@@ -70,10 +81,39 @@
         </div>
       </div>
     </div>
+
+      <div class="container">
+
+
+      <h2 class="center-align" id="Contactanos">Contactanos</h2>
+      <div class="row black-text">
+        <div class="col s6 input-field">
+          <input id="name" type="text" class="validate">
+          <label for="name">Nombre</label>
+        </div>
+        <div class="col s6 input-field">
+          <input id=last_name type="text" class="validate">
+          <label for="last_name">Apellido</label>
+        </div>
+        <div class="col s6 input-field">
+          <input id="mail" type="text" class="validate">
+          <label for="mail">e-Mail</label>
+        </div>
+        <div class="col s6 input-field">
+          <input id="celular" type="text" class="validate">
+          <label for="celular">Celular</label>
+        </div>
+        <div class="col s12 m12 l12 center">
+          <a class="waves-effect waves-light btn-small">Enviar</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
     <div class="section blue">
       <div class="row container redes" id="Redes_Sociales">
-        <h2>Redes Sociales</h2>
-        <div class="col s4">
+        <h2 class="center-align">Redes Sociales</h2>
+        <div class="col s12 m4 l4 hoverable">
           <div class="card">
        <div class="card-image">
          <img src="img/facebook.jpg">
@@ -87,7 +127,7 @@
        </div>
      </div>
         </div>
-        <div class="col s4">
+        <div class="col s12 m4 l4 hoverable">
           <div class="card">
        <div class="card-image">
          <img src="img/twitter.png">
@@ -101,7 +141,7 @@
        </div>
      </div>
         </div>
-        <div class="col s4">
+        <div class="col s12 m4 l4 hoverable">
           <div class="card">
        <div class="card-image">
          <img src="img/linkedln.jpeg">
@@ -118,7 +158,7 @@
       </div>
     </div>
     <!--Fin Contenedor Principal-->
-    <footer class="page-footer red">
+    <footer class="page-footer red darken-4">
         <div class="container">
            <div class="row">
              <div class="col l6 s12">
@@ -126,20 +166,20 @@
                <p class="grey-text text-lighten-4">En los Siguientes Enlaces podran conocer nuestros proveedores</p>
              </div>
              <div class="col l4 offset-l2 s12">
-               <h5 class="white-text">Links</h5>
+               <h5 class="white-text">Enlaces</h5>
                <ul>
-                 <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                 <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                 <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                 <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Enlace 1</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Enlace 2</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Enlace 3</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Enlace 4</a></li>
                </ul>
              </div>
            </div>
          </div>
          <div class="footer-copyright">
            <div class="container">
-           © 2019 Derechos de Autor de Juan Carlos Arias Botero
-           <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+           © 2019 Derechos de Autor pertenecen a Juan Carlos Arias Botero
+           <a class="grey-text text-lighten-4 right" href="#!">jacal2211@gmail.com</a>
            </div>
          </div>
        </footer>
